@@ -12,10 +12,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/Hmisc_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/Hmisc/Hmisc_{{ version }}.tar.gz
-  sha256: 1c612a72eeb618e624f131475f15d4a15b7e2044ad2045d56bf49aa7be3af1a8
+  sha256: 5d395286d699bcabb6460c91798019d84b1cfa7a033841aa3ac5a02f4407e4fd
 
 build:
-  number: 0
+  merge_build_host: True  # [win]
+  number: 1
   skip: true  # [win32]
 
   rpaths:
@@ -24,6 +25,12 @@ build:
 
 requirements:
   build:
+    - posix                # [win]
+    - {{ compiler('fortran') }}        # [unix]
+    - {{ compiler('m2w64_fortran') }}  # [win]
+    - {{ compiler('c') }}        # [unix]
+    - {{ compiler('m2w64_c') }}  # [win]
+  host:
     - r-base
     - r-formula
     - r-acepack
@@ -42,9 +49,6 @@ requirements:
     - r-rpart
     - r-survival >=2.40_1
     - r-viridis
-    - posix                # [win]
-    - {{native}}toolchain  # [win]
-    - gcc                  # [not win]
 
   run:
     - r-base
@@ -65,7 +69,6 @@ requirements:
     - r-rpart
     - r-survival >=2.40_1
     - r-viridis
-    - libgcc  # [not win]
 
 test:
   commands:
