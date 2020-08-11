@@ -1,4 +1,4 @@
-{% set version = "4.4-0" %}
+{% set version = "4.4-1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/Hmisc_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/Hmisc/Hmisc_{{ version }}.tar.gz
-  sha256: f16ecf4c5ee2202d51f426282a54f8000ffa8b9747c3e910205f34f878556ec7
+  sha256: e6178e38f05670d531a06072f8aa88a49da101876252a5cf83f94db0a7c8a356
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -78,9 +78,8 @@ test:
 about:
   home: http://biostat.mc.vanderbilt.edu/Hmisc, https://github.com/harrelfe/Hmisc
   license: GPL (>= 2)
-  summary: Contains many functions useful for data analysis, high-level graphics, utility operations, functions for computing sample size and power, importing and
-    annotating datasets, imputing missing values, advanced table making, variable clustering, character string manipulation, conversion of R objects to LaTeX and
-    html code, and recoding variables.
+  summary: Contains many functions useful for data analysis, high-level graphics, utility operations, functions for computing sample size and power, importing and annotating datasets, imputing missing values, advanced table making, variable clustering, character string manipulation, conversion of R objects to LaTeX and html
+    code, and recoding variables.
   license_family: GPL3
   license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
