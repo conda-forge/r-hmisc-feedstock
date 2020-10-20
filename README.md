@@ -3,7 +3,7 @@ About r-hmisc
 
 Home: http://biostat.mc.vanderbilt.edu/Hmisc, https://github.com/harrelfe/Hmisc
 
-Package license: GPL (>= 2)
+Package license: GPL-2.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-hmisc-feedstock/blob/master/LICENSE.txt)
 
