@@ -1,4 +1,4 @@
-{% set version = "4.6-0" %}
+{% set version = "4.7-0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/Hmisc_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/Hmisc/Hmisc_{{ version }}.tar.gz
-  sha256: 2c1ce906b2333c6dc946dc7f10b74cfa552bce2b12dbebf295d143163562a1ad
+  sha256: 29ec2d9ca11c790c350e93323126bef4f498c69c41c31bb335fd04671e0f87bd
 
 build:
   merge_build_host: true  # [win]
