@@ -1,13 +1,28 @@
-About r-hmisc
-=============
-
-Home: http://biostat.mc.vanderbilt.edu/Hmisc, https://github.com/harrelfe/Hmisc
-
-Package license: GPL-2.0-or-later
+About r-hmisc-feedstock
+=======================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-hmisc-feedstock/blob/main/LICENSE.txt)
 
+About r-hmisc
+-------------
+
+Home: https://hbiostat.org/R/Hmisc/
+
+Package license: GPL-2.0-or-later
+
 Summary: Contains many functions useful for data analysis, high-level graphics, utility operations, functions for computing sample size and power, importing and annotating datasets, imputing missing values, advanced table making, variable clustering, character string manipulation, conversion of R objects to LaTeX and html code, and recoding variables.
+
+Development: https://github.com/harrelfe/Hmisc
+About r-hmisc
+-------------
+
+Home: https://hbiostat.org/R/Hmisc/
+
+Package license: GPL-2.0-or-later
+
+Summary: Contains many functions useful for data analysis, high-level graphics, utility operations, functions for computing sample size and power, importing and annotating datasets, imputing missing values, advanced table making, variable clustering, character string manipulation, conversion of R objects to LaTeX and html code, and recoding variables.
+
+Development: https://github.com/harrelfe/Hmisc
 
 Current build status
 ====================
@@ -59,20 +74,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1237&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hmisc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_r_base4.2" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_r_base4.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1237&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hmisc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_r_base4.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_r_base4.2</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1237&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-hmisc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_r_base4.2" alt="variant">
                 </a>
               </td>
             </tr><tr>
