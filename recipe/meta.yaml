@@ -1,4 +1,4 @@
-{% set version = "5.2-2" %}
+{% set version = "5.2-3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/Hmisc_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/Hmisc/Hmisc_{{ version }}.tar.gz
-  sha256: c55221af4fe0add8f2b9a112a6205833772bd1d2786fcb13f72ae0d06d58097c
+  sha256: 1ec48ebd108014c4f772d4e43a1ddb3e44642c09ffd6f38b07e08e06bcda1172
 
 build:
   skip: true  # [ppc64le]
